@@ -1,9 +1,8 @@
 # ink3-rails
-TEST VERSION - NOT FOR USE
 
 Ink version 3.x.x for Rails asset pipeline (Rails >= 3.1).
 
-Current version 0.0.1
+Current version 0.1.0
 
 More information about Ink Framework at https://github.com/sapo/Ink and http://ink.sapo.pt
 
@@ -11,6 +10,8 @@ More information about Ink Framework at https://github.com/sapo/Ink and http://i
 
 Add this line to your application's Gemfile:
 
+    gem 'ink3-rails'
+or
     gem 'ink3-rails', github: 'mutablestate/ink3-rails'
 
 And this line for FontAwesome support:
@@ -26,12 +27,16 @@ And then execute:
 Add these lines to your application.css before "*= require_tree .":
 
     *= require ink
+or
+    *= require ink-flex
+
+Add this line for FontAwesome support:
+
     *= require font-awesome
 
 Add these lines to your application.js before "//= require_tree .":
 
-    //= require ink.min
-    //= require ink-ui.min
+    //= require ink-all.min
     //= require autoload
     //= require html5shiv
 
