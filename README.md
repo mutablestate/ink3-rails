@@ -36,7 +36,7 @@ Add this line for FontAwesome support:
 
 Add these lines to your application.js before "//= require_tree .":
 
-    //= require ink-all.min
+    //= require ink-all
     //= require autoload
     //= require html5shiv
 
